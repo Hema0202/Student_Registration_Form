@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Student Registration Form</h1>
+
+        <div class="form-elements">
+            <div class="name container">
+                <label for="name">Name: </label>
+                <input class="text-box" autofocus placeholder="Name" type="text" name="name" title="name" id="name">
+            </div>
+    
+            <div class="age container">
+                <label for="age">Age: </label>
+                <input class="text-box" placeholder="Age" type="text" name="age" title="age" id="age">
+            </div>
+    
+            <div class="mobile container">
+                <label for="mobile">Mobile: </label>
+                <input class="text-box" placeholder="Mobile" type="text" name="mobile" title="mobile" id="mobile">
+            </div>
+    
+            <div class="gender container">
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" title="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" title="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" title="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+            <div class="course container">
+                <label for="course">Course: </label>
+                <select class="text-box" id="course" name="course" title="name">
+                    <option selected disabled hidden>Select Course:</option>
+                    <option>State Board</option>
+                    <option>CBSE</option>
+                </select>
+            </div>
+    
+            <div class="address container">
+                <label for="address">Address: </label>
+                <input class="text-box" placeholder="Address" type="text" name="address" title="address" id="address">
+            </div>
+        </div>
+        <!-- Submit button -->
+        <div class="buttons">
+            <button type="submit" title="submit">Submit</button>
+            <button type="reset" title="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
