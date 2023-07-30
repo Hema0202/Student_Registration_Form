@@ -7,23 +7,23 @@
     <title>Student Registration Form</title>
 </head>
 <body>
-    <form action="#">
+    <form id="form" action="#">
         <h1>Student Registration Form</h1>
 
         <div class="form-elements">
             <div class="name container">
                 <label for="name">Name: </label>
-                <input class="text-box" autofocus placeholder="Name" type="text" name="name" title="name" id="name">
+                <input required class="text-box" autofocus placeholder="Name" type="text" name="name" title="name" id="name">
             </div>
     
             <div class="age container">
                 <label for="age">Age: </label>
-                <input class="text-box" placeholder="Age" type="text" name="age" title="age" id="age">
+                <input required class="text-box" placeholder="Age" type="text" name="age" title="age" id="age">
             </div>
     
             <div class="mobile container">
                 <label for="mobile">Mobile: </label>
-                <input class="text-box" placeholder="Mobile" type="text" name="mobile" title="mobile" id="mobile">
+                <input required class="text-box" placeholder="Mobile" type="text" name="mobile" title="mobile" id="mobile">
             </div>
     
             <div class="gender container">
@@ -38,7 +38,7 @@
             
             <div class="course container">
                 <label for="course">Course: </label>
-                <select class="text-box" id="course" name="course" title="name">
+                <select required class="text-box" id="course" name="course" title="name">
                     <option selected disabled hidden>Select Course:</option>
                     <option>State Board</option>
                     <option>CBSE</option>
@@ -47,14 +47,18 @@
     
             <div class="address container">
                 <label for="address">Address: </label>
-                <input class="text-box" placeholder="Address" type="text" name="address" title="address" id="address">
+                <input required class="text-box" placeholder="Address" type="text" name="address" title="address" id="address">
             </div>
         </div>
         <!-- Submit button -->
         <div class="buttons">
-            <button type="submit" title="submit">Submit</button>
-            <button type="reset" title="reset">Reset</button>
+            <button type="submit" id="submit" title="submit">Submit</button>
+            <button type="reset" id="reset" title="reset">Reset</button>
         </div>
+        
     </form>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
